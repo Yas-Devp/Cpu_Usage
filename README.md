@@ -1,95 +1,118 @@
+
+# <img src="https://via.placeholder.com/800x200/4682B4/FFFFFF?text=Cpu_Usage:%20Real-Time%20CPU%20Usage%20Visualizer" alt="Cpu_Usage Banner" width="800">
 <h1 align="center">
   🖥️ Cpu_Usage  
 </h1>
-<p align="center">
-  A minimal and lightweight graphical tool to monitor CPU usage using SDL2.  
-  Clean interface, simple setup, and zero bloat.
-</p>
+**Cpu_Usage** is a simple, yet effective, graphical application that provides a real-time visualization of your CPU usage.  It's designed to be lightweight and easy to use, providing a quick overview of your system's CPU activity.
 
----
+## Table of Contents
 
-📑 Table of Contents
+1.  [Features](#features)
+2.  [Installation](#installation)
+3.  [Usage](#usage)
+4.  [Contributing](#contributing)
+5.  [License](#license)
+6.  [Support](#support)
+7.  [Future Enhancements](#future-enhancements)
+8.  [Credits](#credits)
 
-- [Features](#-features)
-- [Screenshots](#-screenshots)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Dependencies](#-dependencies)
-- [Contributing](#-contributing)
-- [License](#-license)
+## Features
 
----
+*   **Real-Time CPU Usage:** Displays a live graph of CPU utilization.
+*   **Lightweight & Efficient:**  Minimal impact on system resources.
+*   **Simple Graphical Interface:** Easy-to-understand visual representation of CPU activity.
+*   **Cross-Platform Compatibility:**  Designed to work on various systems with SDL2 support (Linux targeted currently).
 
-✨ Features
+## Installation
 
-- Real-time CPU usage display
-- Graphical UI with SDL2
-- Lightweight and fast
-- Simple compilation and usage
-- Extensible for future system metrics
+Before you begin, ensure you have the following prerequisites installed on your system:
 
----
+*   **GCC or Clang:** A C compiler is required to build the application.
+*   **SDL2:** The Simple DirectMedia Layer library is used for window creation, rendering, and event handling.  The SDL2_ttf extension provides font support.
 
-🖼️ Screenshots
+### Prerequisites Installation
 
-*(Add a screenshot of the running app here if possible)*
+**Debian/Ubuntu-based systems (using apt):**
 
----
-
-⚙️ Installation
-
-Make sure you have GCC or Clang, and SDL2 with TTF support installed.
-
-Install GCC / Clang:
 ```bash
-sudo apt install gcc         # or
-sudo apt install clang
+sudo apt update  # Recommended to update package lists first
+sudo apt install gcc libsdl2-dev libsdl2-ttf-dev
 ```
 
-Install SDL2 & SDL2_ttf:
+**Fedora/Red Hat-based systems (using dnf):**
+
 ```bash
-sudo apt install libsdl2-dev libsdl2-ttf-dev
+sudo dnf install gcc SDL2-devel SDL2_ttf-devel
 ```
 
-Clone the Repository:
+**Other Distributions:**
+
+Consult your distribution's package manager for the appropriate packages. The key packages are:
+
+*   `gcc` or `clang` (C compiler)
+*   `SDL2` (SDL2 core library)
+*   `SDL2_ttf` (SDL2 TrueType Font library)
+
+### Cloning the Repository
+
+Clone the Cpu_Usage repository to your local machine:
+
 ```bash
 git clone https://github.com/Yas-Devp/Cpu_Usage
 cd Cpu_Usage
 ```
 
----
+### Building the Application
 
-🚀 Usage
-
-To compile the project:
+Navigate to the cloned directory and compile the source code using the following command:
 
 ```bash
 gcc cpu_info.c -o cpu_info $(sdl2-config --cflags --libs) -lSDL2_ttf
 ```
-Then run:
+
+**Explanation:**
+
+*   `gcc cpu_info.c`:  Compiles the `cpu_info.c` source file.
+*   `-o cpu_info`: Specifies the name of the output executable file as `cpu_info`.
+*   `$(sdl2-config --cflags --libs)`:  Uses the `sdl2-config` utility to automatically include the necessary compiler flags and linker libraries for SDL2.  This simplifies the compilation process and ensures compatibility.
+*   `-lSDL2_ttf`: Links the SDL2_ttf library for font rendering support.
+
+## Usage
+
+After successful compilation, you can run the application with the following command:
 
 ```bash
 ./cpu_info
 ```
 
----
+This will launch the CPU usage visualizer, displaying a graphical representation of your CPU activity.
 
-📦 Dependencies
+## Contributing
 
-- [SDL2](https://libsdl.org/)
-- [SDL2_ttf](https://www.libsdl.org/projects/SDL_ttf/)
-- GCC or Clang
+Contributions are welcome! If you have any ideas for improvements, bug fixes, or new features, please feel free to submit a pull request.
 
----
+1.  Fork the repository.
+2.  Create a new branch for your feature or bug fix.
+3.  Make your changes and commit them with descriptive messages.
+4.  Submit a pull request to the main branch.
 
-🤝 Contributing
+## License
 
-Feel free to fork, open issues or suggest improvements. Contributions are always welcome!
+This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LICENSE) file for details. (Replace `LICENSE` with the actual license file if you have one.)
 
----
+## Support
 
-📄 License
+If you encounter any issues or have questions, please open an issue on the GitHub repository.
 
-This project is licensed under the MIT License.
+## Future Enhancements
 
----
+*   **Cross-Platform Support:** Expanding support to Windows and macOS.
+*   **Customizable Graph:** Allowing users to customize the appearance of the CPU usage graph (colors, scaling, etc.).
+*   **Detailed CPU Information:** Displaying more detailed CPU information, such as CPU temperature, clock speed, and individual core usage.
+*   **Command-Line Arguments:** Adding command-line arguments for configuration options.
+*   **Process Monitoring:** Show the processes that consume the most CPU.
+
+## Credits
+
+*   Developed by [Your Name/Yas-Devp](https://github.com/Yas-Devp).
+*   Uses the [SDL2](https://www.libsdl.org/) library.
