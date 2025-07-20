@@ -1,5 +1,3 @@
-
-# <img src="https://via.placeholder.com/800x200/4682B4/FFFFFF?text=Cpu_Usage:%20Real-Time%20CPU%20Usage%20Visualizer" alt="Cpu_Usage Banner" width="800">
 <h1 align="center">
   🖥️ Cpu_Usage  
 </h1>
