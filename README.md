@@ -96,7 +96,7 @@ Contributions are welcome! If you have any ideas for improvements, bug fixes, or
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LICENSE) file for details. (Replace `LICENSE` with the actual license file if you have one.)
+This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LICENSE) file for details.
 
 ## Support
 
@@ -105,12 +105,10 @@ If you encounter any issues or have questions, please open an issue on the GitHu
 ## Future Enhancements
 
 *   **Cross-Platform Support:** Expanding support to Windows and macOS.
-*   **Customizable Graph:** Allowing users to customize the appearance of the CPU usage graph (colors, scaling, etc.).
-*   **Detailed CPU Information:** Displaying more detailed CPU information, such as CPU temperature, clock speed, and individual core usage.
 *   **Command-Line Arguments:** Adding command-line arguments for configuration options.
 *   **Process Monitoring:** Show the processes that consume the most CPU.
 
 ## Credits
 
-*   Developed by [Your Name/Yas-Devp](https://github.com/Yas-Devp).
+*   Developed by [Yassin](https://github.com/Yas-Devp).
 *   Uses the [SDL2](https://www.libsdl.org/) library.
