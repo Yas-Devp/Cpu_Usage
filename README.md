@@ -110,5 +110,5 @@ If you encounter any issues or have questions, please open an issue on the GitHu
 
 ## Credits
 
-*   Developed by [Yassin](https://github.com/Yas-Devp).
+*   Developed by [Yassine](https://github.com/Yas-Devp).
 *   Uses the [SDL2](https://www.libsdl.org/) library.
